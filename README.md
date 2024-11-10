@@ -4,7 +4,7 @@
 <head>
 <link rel="stylesheet" href="estilos/estilos.css">
 <meta charset="utf-8">
-<title>JONATHAN LIFSCHITZ</title>
+<title>LAYLA YOHNMII HILARES TASAYCO</title>
 <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="owl/owl.carousel.min.css">
 <link rel="stylesheet" href="owl/owl.theme.default.min.css">
@@ -19,7 +19,7 @@
 <header>
   <div class="menu">
     <div class="contenedor">
-      <p class="logo">JONATHAN LIFSCHITZ</p>
+      <p class="logo">YOHNMII HILARES TASAYCO</p>
       <img class="menu-icon" src="imagenes/menu.png" alt="">
       <nav>
         <ul class="lista-menu">
