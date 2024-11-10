@@ -22,12 +22,15 @@
             overflow-x: hidden;
         }
         .container {
-            max-width: 900px;
+            max-width: 1000px;
             margin: 20px auto;
             padding: 20px;
             background-color: #292942;
             border-radius: 10px;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         h1, h2, h3 {
             color: #00c3ff;
@@ -39,21 +42,7 @@
         }
         .section {
             margin-bottom: 20px;
-            transition: transform 0.3s;
-        }
-        .section:hover {
-            transform: translateY(-5px);
-        }
-        .contact-info, .education, .experience, .skills {
-            list-style: none;
-            padding: 0;
-        }
-        .contact-info li, .education li, .experience li, .skills li {
-            margin-bottom: 10px;
-        }
-        .icon {
-            color: #00c3ff;
-            margin-right: 10px;
+            width: 100%;
         }
         /* Encabezado */
         .header {
@@ -61,26 +50,14 @@
             margin-bottom: 20px;
         }
         .header h1 {
-            font-size: 2em;
+            font-size: 2.5em;
         }
         .profile-pic {
-            width: 100px;
-            height: 100px;
+            width: 120px;
+            height: 120px;
             border-radius: 50%;
             object-fit: cover;
-            border: 3px solid #00c3ff;
-        }
-        /* Animación */
-        .section:hover {
-            animation: float 0.3s ease-in-out;
-        }
-        @keyframes float {
-            from {
-                transform: translateY(0);
-            }
-            to {
-                transform: translateY(-10px);
-            }
+            border: 4px solid #00c3ff;
         }
         /* Redes sociales */
         .social-links {
@@ -97,6 +74,21 @@
         .social-links a:hover {
             color: #00ffb3;
         }
+        /* Sección con ilustraciones */
+        .illustration-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            background-color: #2e2e4d;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .illustration-section img {
+            width: 100px;
+            height: auto;
+        }
     </style>
 </head>
 <body>
@@ -108,10 +100,17 @@
             <p>Especialista en Ciberseguridad</p>
         </div>
 
+        <!-- Ilustración de ciberseguridad -->
+        <div class="illustration-section">
+            <img src="https://www.example.com/escudo.svg" alt="Escudo de ciberseguridad">
+            <img src="https://www.example.com/red.svg" alt="Icono de red">
+            <img src="https://www.example.com/servidor.svg" alt="Icono de servidor">
+        </div>
+
         <!-- Información de contacto -->
         <div class="section">
             <h2><i class="fas fa-address-card icon"></i>Información de Contacto</h2>
-            <ul class="contact-info">
+            <ul>
                 <li><i class="fas fa-phone icon"></i>Teléfono: +123 456 7890</li>
                 <li><i class="fas fa-envelope icon"></i>Email: correo@ejemplo.com</li>
                 <li><i class="fab fa-linkedin icon"></i>LinkedIn: linkedin.com/in/tuperfil</li>
@@ -133,7 +132,7 @@
         <!-- Experiencia Profesional -->
         <div class="section">
             <h2><i class="fas fa-briefcase icon"></i>Experiencia Profesional</h2>
-            <ul class="experience">
+            <ul>
                 <li>
                     <h3>Analista de Ciberseguridad</h3>
                     <p><strong>Empresa ABC</strong> - Enero 2022 - Presente</p>
@@ -160,7 +159,7 @@
         <!-- Educación -->
         <div class="section">
             <h2><i class="fas fa-graduation-cap icon"></i>Educación</h2>
-            <ul class="education">
+            <ul>
                 <li>
                     <h3>Licenciatura en Seguridad Informática</h3>
                     <p><strong>Universidad de la Ciberseguridad</strong> - 2018 - 2022</p>
@@ -175,7 +174,7 @@
         <!-- Habilidades Técnicas -->
         <div class="section">
             <h2><i class="fas fa-tools icon"></i>Habilidades Técnicas</h2>
-            <ul class="skills">
+            <ul>
                 <li>Conocimiento en herramientas de análisis de vulnerabilidades (Nessus, Metasploit, Burp Suite)</li>
                 <li>Pruebas de penetración y hacking ético</li>
                 <li>Seguridad en redes y sistemas operativos (Windows, Linux)</li>
@@ -187,7 +186,7 @@
         <!-- Idiomas -->
         <div class="section">
             <h2><i class="fas fa-language icon"></i>Idiomas</h2>
-            <ul class="skills">
+            <ul>
                 <li>Español - Nativo</li>
                 <li>Inglés - Intermedio</li>
             </ul>
@@ -195,4 +194,5 @@
     </div>
 </body>
 </html>
+
 
